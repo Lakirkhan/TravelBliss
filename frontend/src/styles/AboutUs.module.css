@@ -1,0 +1,132 @@
+.aboutUs {
+  background-color: #f4f4f4;
+  color: #333;
+  font-family: "Arial", sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+.navbarDiv {
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.aboutUsHeader {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* Removed background image */
+  height: 60vh;
+  color: white;
+  text-align: center;
+  background-color: #333; /* Optional: Add a background color */
+}
+
+.aboutUsHeader h1 {
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.aboutUsHeader p {
+  font-size: 24px;
+  font-weight: 300;
+}
+
+.companyInfo,
+.ourValues {
+  padding: 60px 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  margin: 40px 20px;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.companyInfo h2,
+.ourValues h2 {
+  font-size: 36px;
+  font-weight: bold;
+  color: #555;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.companyInfo p {
+  font-size: 18px;
+  line-height: 1.6;
+  text-align: justify;
+}
+
+.ourValues ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.ourValues ul li {
+  font-size: 18px;
+  margin-bottom: 20px;
+  padding-left: 40px;
+  position: relative;
+}
+
+.ourValues ul li::before {
+  content: "✔";
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-size: 24px;
+  color: #4caf50;
+}
+
+.ourValues ul li strong {
+  font-weight: bold;
+  color: #000;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+  .aboutUsHeader h1 {
+    font-size: 36px;
+  }
+
+  .aboutUsHeader p {
+    font-size: 20px;
+  }
+
+  .companyInfo h2,
+  .ourValues h2 {
+    font-size: 28px;
+  }
+
+  .companyInfo p,
+  .ourValues ul li {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 576px) {
+  .aboutUsHeader h1 {
+    font-size: 28px;
+  }
+
+  .aboutUsHeader p {
+    font-size: 18px;
+  }
+
+  .companyInfo,
+  .ourValues {
+    padding: 40px 15px;
+  }
+
+  .companyInfo h2,
+  .ourValues h2 {
+    font-size: 24px;
+  }
+}
+

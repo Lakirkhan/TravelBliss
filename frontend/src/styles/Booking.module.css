@@ -1,0 +1,79 @@
+.bookingWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  margin-top: 100px;
+}
+
+.navbarDiv {
+  width: 100%;
+}
+
+.dateP {
+  font-size: 1rem;
+  margin: 20px 0;
+}
+
+.bookingForm {
+  width: 100%;
+  max-width: 800px;
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.packageDetailsDiv {
+  margin: 20px 0;
+}
+
+.familySection {
+  margin: 20px 0;
+}
+
+.memberDetails {
+  margin-bottom: 10px;
+}
+
+.billDiv {
+  margin: 20px 0;
+}
+
+.bookBtnDiv {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.cancelBtn,
+.bookBtn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.cancelBtn {
+  background-color: #ccc;
+}
+
+.cancelBtnLink {
+  text-decoration: none;
+  color: inherit;
+}
+
+.bookBtn {
+  background-color: #28a745;
+  color: #fff;
+}
+
+.errorMessage {
+  color: red;
+  margin-top: 10px;
+}
+
+.successMessage {
+  color: green;
+  margin-top: 10px;
+}

@@ -1,0 +1,161 @@
+
+@keyframes slideIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.navbar {
+  height: 70px;
+  margin-top: 0px;
+  align-content: center;
+  background-color: rgba(255, 255, 255); /* Transparent background */
+  backdrop-filter: blur(10px); /* Blur effect */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow to enhance glass look */
+  border-radius: 10px; /* Rounded corners */
+  padding: 10px 20px;
+  transition: background-color 0.3s ease, backdrop-filter 0.3s ease;
+}
+
+.navbar:hover {
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.3
+  ); /* Slightly more opaque on hover */
+  backdrop-filter: blur(12px); /* Enhance blur on hover */
+}
+
+.navbarBrand {
+  margin-left: 15px;
+}
+
+.navItem {
+  list-style: none;
+}
+
+.navLink {
+  font-size: 18px;
+  align-items: center;
+  margin-right: 20px;
+  position: relative; /* Positioning context for the pseudo-element */
+  padding: 5px;
+  border-radius: 4px;
+  overflow: hidden; /* Hide overflow of the pseudo-element */
+  color: black !important;
+  /* Initial text color */
+  transition: color 0.3s ease; /* Transition for text color */
+  animation: slideIn 0.5s ease-in forwards;
+  border: 2px  solid transparent;
+
+}
+
+.navLink:hover {
+  cursor: pointer;
+  border: 2px solid white;
+}
+
+.color-important {
+  color: black !important; /* Example, adjust as necessary */
+}
+
+.togglerBtn {
+  border: 0px solid transparent;
+}
+
+.startforfreebtn {
+  border: 2px solid rgb(255, 255, 255);
+}
+
+.companyLogo {
+  border-radius: 50%;
+  transition: transform 4s ease;
+}
+
+.companyLogo:hover {
+  cursor: pointer;
+}
+
+.btnPrimary {
+  background-color: transparent;
+}
+
+.profilePhoto {
+  width: 50px;
+  height: 50px;
+  border: 2px solid white;
+  border-radius: 50%;
+}
+
+.dropdownMenu {
+  width: 250px;
+  height: 250px;
+}
+
+.customDropdownToggle::after {
+  display: none;
+}
+
+.customDropdownToggle {
+  margin-left: 10px;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.customDropdownToggle:hover {
+  color: #ee00f2 !important;
+  transform: scale(1.3);
+}
+
+.dropdownMenulist {
+  text-align: center;
+}
+
+.dropdownItemLogoutBtn {
+  color: rgb(242, 8, 8);
+  background-color: transparent;
+}
+
+.dropdownItemLogoutBtn:hover {
+  transform: scale(1.1);
+  background-color: transparent;
+  color: red;
+}
+
+.dropdownHiTraveller {
+  font-size: 22px;
+}
+.dropdownMenulist {
+  padding-top: 10px;
+}
+
+.profilephotoImg {
+  border-radius: 50%;
+  padding: 3px;
+  margin-top: 20px;
+  border: 2px solid black;
+  width: 80px;
+}
+
+@media (max-width: 767.98px) {
+  .navbar {
+    background-color: white;
+    color: white !important;
+  }
+
+  .togglerDiv {
+    margin-top: 200px;
+    background: rgb(0, 0, 0, 0.9);
+    color: white !important;
+  }
+
+  .customDropdownToggle:hover {
+    color: #ee00f2 !important;
+    transform: scale(1);
+  }
+}

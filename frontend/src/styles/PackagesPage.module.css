@@ -2,11 +2,11 @@
 .maindiv {
   width: 100%;
   font-family: Arial, sans-serif;
-  background-image: url('../../public/static/image/backgrounds/Download\ premium\ vector\ of\ Travel\ and\ leisure\ decorated\ banner\ vector\ about\ passport\,\ worldwide\ vacation\,\ travel\ passport\,\ airplane\ ticket\,\ and\ ticket\ gate\ 1229263.jpeg'); /* Set your background image */
-  background-size: cover;      /* Make sure the background covers the entire container */
+  background-image: url("../../public/static/image/backgrounds/bg1.jpeg"); /* Set your background image */
+  background-size: cover; /* Make sure the background covers the entire container */
   background-position: center; /* Center the background image */
   background-repeat: no-repeat; /* Prevent the image from repeating */
-  min-height: 100vh;           /* Make sure the div takes up the full viewport height */
+  min-height: 100vh; /* Make sure the div takes up the full viewport height */
   padding: 20px 10px;
   text-align: center;
   background-attachment: fixed; /* Keep the background fixed during scrolling */

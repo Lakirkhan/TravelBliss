@@ -1,0 +1,28 @@
+.confirmationWrapper {
+  padding: 40px;
+  text-align: center;
+}
+
+.confirmationContent {
+  margin: auto;
+  padding: 20px;
+  max-width: 600px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.confirmationActions {
+  margin-top: 20px;
+}
+
+.homeLink {
+  color: #007BFF;
+  text-decoration: none;
+  font-weight: bold;
+}

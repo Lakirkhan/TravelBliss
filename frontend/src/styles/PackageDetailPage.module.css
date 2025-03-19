@@ -1,0 +1,158 @@
+/* General container styling for consistent layout */
+.container {
+  display: flex;
+  flex-direction: column;
+  max-width: 1200px;
+  margin: 0 auto; /* Center the content */
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Header styling with padding for a clean layout */
+.header {
+  background-color: #f5f5f5;
+  padding: 40px 20px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+
+.headerTitle {
+  font-size: 2.5rem;
+  margin-top: 50px; /* Reduced top margin for better balance */
+  margin-bottom: 20px;
+  text-align: center;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Content section for main body with additional padding */
+.content {
+  padding: 40px 20px;
+  background-color: #fff;
+}
+
+/* Styling for each section with balanced margins */
+.section {
+  margin-bottom: 50px;
+}
+
+.sectionTitle {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 10px;
+  color: #444;
+}
+
+/* Specific section content styling */
+.itinerary,
+.thingsToKnow,
+.gallery {
+  margin-top: 20px;
+}
+
+.itineraryItem {
+  margin-bottom: 30px; /* More spacing for readability */
+}
+
+.dayTitle {
+  font-size: 1.4rem;
+  margin: 0 0 10px 0;
+  color: #333;
+}
+
+.dayDetails {
+  padding-left: 20px;
+  line-height: 1.6; /* Better line height for readability */
+  color: #666;
+}
+
+/* Information sections with a bold title */
+.info {
+  margin-bottom: 30px;
+}
+
+.infoTitle {
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: #555;
+}
+
+/* Gallery styling with responsive flexbox */
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.galleryImage {
+  width: calc(33.333% - 10px);
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover; /* Ensures images maintain aspect ratio */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive styling for tablets */
+@media (max-width: 768px) {
+  .galleryImage {
+    width: calc(50% - 10px); /* Two columns for medium screens */
+  }
+
+  .headerTitle {
+    font-size: 2rem; /* Smaller title on smaller screens */
+  }
+
+  .sectionTitle {
+    font-size: 1.6rem;
+  }
+}
+
+/* Responsive styling for mobile devices */
+@media (max-width: 480px) {
+  .galleryImage {
+    width: 100%; /* Single column for mobile screens */
+  }
+
+  .header {
+    padding: 30px 10px;
+  }
+
+  .headerTitle {
+    font-size: 1.8rem;
+    margin-top: 30px; /* Reduce margin on mobile */
+  }
+
+  .content {
+    padding: 20px 10px;
+  }
+
+  .sectionTitle {
+    font-size: 1.5rem;
+  }
+
+  .dayTitle {
+    font-size: 1.2rem;
+  }
+
+  .infoTitle {
+    font-size: 1.1rem;
+  }
+}
+footer {
+    width: 100%; /* Ensures the footer takes the full width */
+    position: relative; /* Or 'fixed' if you want it to stay at the bottom */
+    left: 0; /* Aligns it to the left edge */
+    bottom: 0; /* Aligns it to the bottom if positioned fixed */
+}
+.container {
+    width: 100%; /* Or adjust according to your layout */
+    max-width: 1200px; /* If you want a maximum width */
+    margin: 0 auto; /* Centering the container */
+}
+@media (max-width: 768px) {
+    footer {
+        width: 100%; /* Adjust as necessary for mobile */
+    }
+}

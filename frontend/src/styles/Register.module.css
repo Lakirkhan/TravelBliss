@@ -1,0 +1,100 @@
+/* Styles for the register page */
+
+.registerPage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #e3f4fc; /* Light blue background */
+}
+
+.registerContainer {
+  display: flex;
+  width: 70%;
+  max-width: 1200px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.formContainer {
+  flex: 1;
+  padding: 40px;
+  background-color: white;
+}
+
+.logoContainer {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.fontStyle {
+  font-size: 24px;
+  font-weight: bold;
+  color: #0b72b9;
+}
+
+.registerSlogan {
+  text-align: center;
+  color: #333;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.registerHeading {
+  text-align: center;
+  color: #555;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.inputField {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.registerButton {
+  width: 100%;
+  padding: 12px;
+  background-color: #0b72b9;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.registerButton:hover {
+  background-color: #094a7e;
+}
+
+.registerLink {
+  display: block;
+  text-align: center;
+  margin-top: 10px;
+  color: #0b72b9;
+}
+
+.imageContainer {
+  flex: 1;
+  background-color: #c6e9fb; /* Blue background */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.image {
+  width: 80%;
+  border-radius: 8px;
+}
+
+.imageText {
+  position: absolute;
+  bottom: 20px;
+  color: blue; /* Changed to blue */
+  font-size: 18px;
+  font-weight: bold;
+}

@@ -1,0 +1,281 @@
+.profileBody {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, sans-serif;
+}
+
+
+.container {
+  /* background-image: url("../../public/static/image/backgrounds/profilebg.jpg"); */
+  background-size: cover;
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.8
+  ); /* Optional: adds a semi-transparent white background to the content */
+  border-radius: 10px;
+  padding: 20px;
+  width: 80vw;
+  max-width: 1000px;
+}
+
+.profileDetailsContainer {
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.9
+  ); /* Optional: make this section more readable */
+  padding: 70px;
+  border-radius: 8px;
+  /* margin:100px; */
+  /* margin-top: 500px; */
+}
+
+.buttonsDiv {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+/* Additional styling can be added as needed */
+
+.fontStyle {
+  font-family: "Protest Riot", sans-serif;
+}
+
+.navbarDiv {
+  height: 60px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+
+.sidebar {
+  width: 400px;
+  height: 100vh;
+  position: fixed;
+  background-color: rgb(5, 0, 56);
+  top: 70px;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  padding: 10px;
+}
+
+.fullWidthProfilePhotoSection {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.fullWidthProfilePhotoContainer {
+  margin-top: 200px;
+  position: relative;
+}
+
+.fullWidthProfilePhoto {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.username {
+  margin-top: 10px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.subnavbar {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.innerSubnavbar {
+  padding: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.innerSubnavbar:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.profileBody {
+  margin-left: 200px;
+  padding: 20px;
+  min-height: 100vh;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.container {
+  margin-top: 100px;
+  max-width: 1000px;
+  margin-left: 300px;
+}
+
+.content {
+  background-color: rgba(14, 10, 10, 0.1);
+
+  border-radius: 10px;
+  padding: 30px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.profileDetailsContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.profileInputs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.profileInputs input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.buttonsDiv {
+  margin-top: 20px;
+  display: flex;
+  gap: 10px;
+}
+
+.saveButton,
+.cancelButton,
+.editButton,
+.logoutButton,
+.changePassButton {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.saveButton {
+  background-color: green;
+  color: white;
+}
+
+.cancelButton {
+  background-color: gray;
+  color: white;
+}
+
+.editButton {
+  background-color: blue;
+  color: white;
+}
+
+.logoutButton {
+  background-color: red;
+  color: white;
+}
+
+.changePassButton {
+  background-color: purple;
+  color: white;
+}
+
+.changePasswordImage {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.passwordSection {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.inputContainer {
+  margin-top: 20px;
+}
+
+.validationError {
+  color: red;
+  font-size: 14px;
+}
+
+@media (max-width: 768px) {
+  .profileBody {
+    margin-left: 0;
+    padding: 20px 10px;
+  }
+
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: static;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px 0;
+    background-color: rgb(119, 39, 39);
+  }
+
+  .subnavbar {
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+  }
+
+  .fullWidthProfilePhoto {
+    width: 100px;
+    height: 100px;
+  }
+
+  .profileInputs input {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .content {
+    padding: 20px;
+  }
+
+  .buttonsDiv {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 576px) {
+  .profileBody {
+    padding: 10px 5px;
+  }
+
+  .content {
+    padding: 15px;
+  }
+
+  .fullWidthProfilePhoto {
+    width: 80px;
+    height: 80px;
+  }
+
+  .username {
+    font-size: 18px;
+  }
+
+  .buttonsDiv {
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,163 @@
+/* General Container */
+.maindiv {
+  width: 100%;
+  font-family: Arial, sans-serif;
+  background-image: url('../../public/static/image/backgrounds/Download\ premium\ vector\ of\ Travel\ and\ leisure\ decorated\ banner\ vector\ about\ passport\,\ worldwide\ vacation\,\ travel\ passport\,\ airplane\ ticket\,\ and\ ticket\ gate\ 1229263.jpeg'); /* Set your background image */
+  background-size: cover;      /* Make sure the background covers the entire container */
+  background-position: center; /* Center the background image */
+  background-repeat: no-repeat; /* Prevent the image from repeating */
+  min-height: 100vh;           /* Make sure the div takes up the full viewport height */
+  padding: 20px 10px;
+  text-align: center;
+  background-attachment: fixed; /* Keep the background fixed during scrolling */
+}
+
+/* Navbar */
+.navbardiv {
+  position: relative;
+  z-index: 10;
+  margin-bottom: 100px;
+}
+
+/* Packages Container */
+.packagesContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.packageCard {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #ddd;
+  background-color: #fff;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.durationOverlay {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.packageImageWrapper {
+  padding: 10px;
+  position: relative;
+  width: 100%;
+  height: 300px;
+}
+
+.packageImage {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.packageContent {
+  padding: 15px;
+  flex-grow: 1;
+}
+
+.packageContentHead {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.packageTitle {
+  font-size: 1.5rem;
+  margin-top: 20px;
+  font-weight: 600;
+}
+
+.packageDescription {
+  margin: 10px 0;
+  color: #555;
+  text-align: start;
+  text-align: center;
+}
+
+/* Package Actions */
+.packageActions {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px;
+}
+
+.addToWishlistBtn,
+.addToCartBtn {
+  padding: 10px 15px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 1rem;
+  border: 2px solid navy;
+  color: #060353;
+}
+
+.addToWishlistBtn {
+  border-color: red;
+}
+
+/* No Packages */
+.noPackages {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #999;
+}
+
+/* Loader */
+.loader {
+  text-align: center;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+/* Responsive Design */
+
+/* For screens smaller than 768px (Tablets & Mobile) */
+@media (max-width: 768px) {
+  .headerImage {
+    height: 300px;
+  }
+
+  .brodiesFont {
+    font-size: 2rem;
+  }
+
+  .packageCard {
+    grid-template-columns: 1fr;
+  }
+
+  .packageContent {
+    padding: 10px;
+  }
+
+  .packageTitle {
+    font-size: 1.2rem;
+  }
+
+  .packageDescription {
+    font-size: 0.9rem;
+  }
+
+  .addToWishlistBtn,
+  .addToCartBtn {
+    padding: 8px 12px;
+    font-size: 0.9rem;
+  }
+}
+
+/* For screens larger than 1200px (Desktops) */
+@media (min-width: 1200px) {
+  .packageCard {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .packageImageWrapper {
+    height: 300px;
+  }
+}
